@@ -34,7 +34,7 @@ app.post('/register', async(req, res) => {
 });
 app.post('/login', async(req, res) => {
     const {username, password} = req.body;
-    const user = await User.finOne({username, password});
+    const user = await User.findOne({username, password});
     if (user) {
         res.status(200).send("Inicio de sesion exitoso!");
     }
