@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio de sesion</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Iniciar Sesion</h1>
+            <form id="loginForm">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Iniciar Sesion</button>
+            </form>
+            <div id="message"></div>
+        </div>
+        <p>
+            ¿No tienes cuenta? <a href="#" id="showRegister">Registrate aqui</a>
+        </p>
+        <div id="registerForm" style="display: none;">
+            <h1>Crear cuenta</h1>
+            <label for="newUsername">Usuario:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">Contraseña:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <button id="registerButton">Crear Cuenta</button>
+            <div id="registerMessage"></div>
+            <p>¿Ya tienes cuenta? <a href="#" id="showLogin">Inicia sesion aqui</a></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
