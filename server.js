@@ -15,7 +15,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root', //Usuario por defecto en XAMPP
     password: '', //Dejar vacio si no hay contraseña
-    database: 'login_system'  //Nombre de la base de datos creada
+    database: 'login-system'  //Nombre de la base de datos creada
 });
 
 //Conectar la base de datos
