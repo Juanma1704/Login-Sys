@@ -46,7 +46,6 @@ document.getElementById('registerButton').addEventListener('click', function(){
         users[newUsername] = newPassword;
         registerMessage.textContent = "Cuenta creada exitosamente!";
         registerMessage.style.color = "green";
-        document.getElementById('registerForm').reset(); //Limpiar el formulario
     }
 });
 
