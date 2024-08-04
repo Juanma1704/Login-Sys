@@ -9,8 +9,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 //Conectar a MongoDB
-mongoose.connect('mongodb+srv://Juan:16172425@jmch.qtlzygo.mongodb.net/?retryWrites=true&w=majority&appName=JMCH', {
-    useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://Juan:16172425@jmch.qtlzygo.mongodb.net/?retryWrites=true&w=majority&appName=JMCH',)
     .then (() => console.log('Conectado a MongoDB'))
     .catch(err => console.log(err));
 //Definir el esquema y modelo de usuario
